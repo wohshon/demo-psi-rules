@@ -9,9 +9,9 @@ public class PsiData implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "reading")
+//   @org.kie.api.definition.type.Label(value = "reading")
    private int reading;
-   @org.kie.api.definition.type.Label(value = "status")
+//   @org.kie.api.definition.type.Label(value = "status")
    private java.lang.String status;
 
    public PsiData()
