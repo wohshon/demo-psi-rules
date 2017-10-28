@@ -18,7 +18,7 @@ public class PsiData implements java.io.Serializable
    private java.lang.String notify;
 
    @org.kie.api.definition.type.Label(value = "notifyType")
-   private java.lang.String notifyType;
+   private java.util.List<java.lang.String> notifyType;
 
    public PsiData()
    {
@@ -54,18 +54,18 @@ public class PsiData implements java.io.Serializable
       this.notify = notify;
    }
 
-   public java.lang.String getNotifyType()
+   public java.util.List<java.lang.String> getNotifyType()
    {
       return this.notifyType;
    }
 
-   public void setNotifyType(java.lang.String notifyType)
+   public void setNotifyType(java.util.List<java.lang.String> notifyType)
    {
       this.notifyType = notifyType;
    }
 
    public PsiData(int reading, java.lang.String status, java.lang.String notify,
-         java.lang.String notifyType)
+         java.util.List<java.lang.String> notifyType)
    {
       this.reading = reading;
       this.status = status;
