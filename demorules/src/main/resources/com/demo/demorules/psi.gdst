@@ -69,7 +69,7 @@
     </set-field-col52>
     <set-field-col52>
       <typedDefaultValue>
-        <valueString></valueString>
+        <valueString>email</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
@@ -79,6 +79,7 @@
       <boundName>f1</boundName>
       <factField>notifyType</factField>
       <type>String</type>
+      <valueList>email, slack,all</valueList>
       <update>false</update>
     </set-field-col52>
     <set-field-col52>
@@ -239,7 +240,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>email</valueString>
+        <valueString>slack</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -279,7 +280,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>slack</valueString>
+        <valueString>email</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -318,7 +319,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>slack,email</valueString>
+        <valueString>all</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
