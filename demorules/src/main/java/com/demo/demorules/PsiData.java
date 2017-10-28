@@ -9,10 +9,16 @@ public class PsiData implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "reading")
+   @org.kie.api.definition.type.Label("reading")
    private int reading;
-   @org.kie.api.definition.type.Label(value = "status")
+   @org.kie.api.definition.type.Label("status")
    private java.lang.String status;
+
+   @org.kie.api.definition.type.Label(value = "notify")
+   private java.lang.String notify;
+
+   @org.kie.api.definition.type.Label(value = "notifyType")
+   private java.lang.String notyFyType;
 
    public PsiData()
    {
@@ -38,10 +44,33 @@ public class PsiData implements java.io.Serializable
       this.status = status;
    }
 
-   public PsiData(int reading, java.lang.String status)
+   public java.lang.String getNotify()
+   {
+      return this.notify;
+   }
+
+   public void setNotify(java.lang.String notify)
+   {
+      this.notify = notify;
+   }
+
+   public java.lang.String getNotyFyType()
+   {
+      return this.notyFyType;
+   }
+
+   public void setNotyFyType(java.lang.String notyFyType)
+   {
+      this.notyFyType = notyFyType;
+   }
+
+   public PsiData(int reading, java.lang.String status, java.lang.String notify,
+         java.lang.String notyFyType)
    {
       this.reading = reading;
       this.status = status;
+      this.notify = notify;
+      this.notyFyType = notyFyType;
    }
 
 }
